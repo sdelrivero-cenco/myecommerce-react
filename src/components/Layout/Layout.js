@@ -2,11 +2,13 @@ import React from "react";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 
-export default function Layout({ children }) {
+import "./Layout.scss";
+
+export default function Layout({ children, type }) {
   return (
     <>
-      <Header />
-      {children}
+      <Header type={type} />
+      <div className="main">{children}</div>
       <Footer />
     </>
   );

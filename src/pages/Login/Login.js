@@ -6,7 +6,7 @@ import UserForm from "../../components/UserForm/UserForm";
 
 export default function Login() {
   return (
-    <Layout>
+    <Layout type="form">
       <UserForm type="login" />
     </Layout>
   );

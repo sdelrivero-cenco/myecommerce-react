@@ -39,7 +39,9 @@ export default function UserForm({ type }) {
             {type === "register" ? "Registrate" : "Iniciar Sesion"}
           </button>
         </form>
-        {type === "login" ? <Link>No tienes usuario? Registrate!</Link> : null}
+        {type === "login" ? (
+          <Link to={"/register"}>No tienes usuario? Registrate!</Link>
+        ) : null}
       </div>
     </div>
   );

@@ -1,10 +1,4 @@
 import "./Footer.scss";
-import twitter from "../../assets/img/twitter.svg";
-import facebook from "../../assets/img/facebook.svg";
-import ig from "../../assets/img/instagram.svg";
-import yb from "../../assets/img/youtube.svg";
-import ap from "../../assets/img/apple.svg";
-import gp from "../../assets/img/google-play.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { FaTwitter } from "@fortawesome/free-solid-svg-icons";

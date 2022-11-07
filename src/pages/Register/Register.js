@@ -4,7 +4,7 @@ import UserForm from "../../components/UserForm/UserForm";
 
 export default function Register() {
   return (
-    <Layout>
+    <Layout type="form">
       <UserForm type="register" />
     </Layout>
   );

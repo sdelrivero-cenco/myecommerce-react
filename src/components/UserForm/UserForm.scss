@@ -45,6 +45,13 @@
         margin-bottom: 10px;
         border-radius: 13px;
         padding: 10px;
+        color: $gray-dark;
+
+        &:active,
+        &:focus {
+          border: none;
+          outline: 1px solid black;
+        }
       }
     }
     button {
@@ -56,6 +63,11 @@
       border-radius: 13px;
       border: none;
       cursor: pointer;
+      transition: $transition-normal;
+
+      &:hover {
+        background-color: $gray-dark-hover;
+      }
     }
   }
 }

@@ -1,0 +1,98 @@
+@import "../../assets/variables";
+.combos-container {
+  width: 100vw;
+  height: 270px;
+  background-color: $green;
+  position: relative;
+  //   display: flex;
+  //   justify-content: center;
+  display: flex;
+  justify-content: center;
+  //   align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.combos {
+  width: 80%;
+  &__each {
+    position: absolute;
+
+    display: flex;
+    align-items: flex-end;
+
+    width: 92%;
+    max-width: 382px;
+    height: 194px;
+
+    border-radius: 16px;
+    margin: auto;
+    background-size: cover;
+  }
+}
+
+.combo-1 {
+  background-image: url("../../assets/img/hbobg.jpg");
+  background-size: cover;
+  top: -55px;
+  position: relative;
+}
+.combo-2 {
+  position: relative;
+  background-image: url("../../assets/img/disneybg.jpg");
+  background-size: cover;
+
+  top: -45px;
+}
+.combo {
+  &-img {
+    z-index: 4;
+    img {
+      width: 100px;
+      border-radius: 5px;
+    }
+    margin: 10px;
+  }
+  &-text {
+    z-index: 4;
+    margin: 14px;
+    color: white;
+
+    &__title {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+}
+
+.shadow {
+  position: absolute;
+  border-radius: 16px;
+  z-index: 3;
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+}
+
+@media (min-width: 900px) {
+  .combos {
+    width: 80%;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    gap: 4%;
+    height: 100%;
+    &__each {
+      width: 504px;
+      max-width: none;
+      height: 256px;
+      max-height: none;
+    }
+  }
+  .combo-1 {
+    top: -30px;
+  }
+  .combo-2 {
+    top: -30px;
+  }
+}

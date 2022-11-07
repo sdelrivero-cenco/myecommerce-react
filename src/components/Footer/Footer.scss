@@ -1,6 +1,7 @@
 @import "../../assets/variables";
 .footer {
-  position: absolute;
+  border-top: 1px solid $gray-light;
+  // position: absolute;
   bottom: 0px;
   height: 96px;
   width: 100%;
@@ -11,6 +12,7 @@
 
   &-title {
     p {
+      margin-top: 10px;
       font-size: 0.9rem;
       color: $gray-light;
     }
